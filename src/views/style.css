@@ -1,0 +1,209 @@
+.text-patch {
+  text-decoration: none;
+  color: black;
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: lighter;
+  font-size: 150%;
+}
+
+.text-center {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-family: MetricHPE Semibold;
+  font-weight: lighter;
+  font-size: 100%;
+}
+
+.cell-border-compact-stripe {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-family: Calibri;
+  font-weight: lighter;
+  font-size: 7px;
+}
+
+.report {
+  text-decoration: none;
+  color: green;
+  text-align: center;
+  font-family: Consolas;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.report::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: green;
+  transition: width 0.3s;
+}
+
+.report:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.cell-border-compact-stripe {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 20px;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.cell-border-compact-stripe tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.cell-border-compact-stripe tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.cell-border-compact-stripe th,
+.cell-border-compact-stripe td {
+  padding: 12px 15px;
+}
+
+.cell-border-compact-stripe tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.cell-border-compact-stripe tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.cell-border-compact-stripe tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 1%;
+  width: 100%;
+}
+
+.flex-item {
+  display: flex-end;
+  flex: 1;
+  margin-bottom: 1%;
+}
+
+.flex-item.buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.flex-item.search-box {
+  justify-content: flex-end;
+}
+
+#result_dataTable_wrapper .dataTables_filter,
+#result_dataTable_wrapper .dataTables_buttons {
+  float: none;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#result_dataTable_wrapper .dataTables_filter input {
+  margin-left: auto;
+}
+
+#result_dataTable th {
+  border-bottom: 1px solid #000;
+}
+
+div.dt-container .dt-paging .dt-paging-button {
+  /* box-sizing: border-box; */
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0.5em 1em;
+  margin-left: 2px;
+  text-align: center;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: inherit !important;
+  border: 1px transparent;
+  border-radius: 100px;
+  background: transparent;
+}
+
+div.dt-container .dt-paging .dt-paging-button.current,
+div.dt-container .dt-paging .dt-paging-button.current:hover {
+  color: inherit !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.05);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(230, 230, 230, 0.05)),
+    color-stop(100%, rgba(0, 0, 0, 0.05))
+  );
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(230, 230, 230, 0.05) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(
+    top,
+    rgba(230, 230, 230, 0.05) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  /* FF3.6+ */
+  background: -ms-linear-gradient(
+    top,
+    rgba(230, 230, 230, 0.05) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  /* IE10+ */
+  background: -o-linear-gradient(
+    top,
+    rgba(230, 230, 230, 0.05) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  /* Opera 11.10+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(230, 230, 230, 0.05) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  /* W3C */
+}
+
+.dt-button {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  font-size: 20px !important;
+  padding: 7px 4% !important;
+}
+
+.dt-button:focus {
+  outline: none !important;
+}
+
+.dt-button:hover {
+  background-color: #f0f0f0 !important;
+}
